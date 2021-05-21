@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="header"> 
+      <nav>
+        <a class="main_logo"> 
+          <img src="img/logo.svg" alt="Логотип Седона" width="138px" height="70px">
+        </a>
+        <ul class="main_menu_list">
+          <li class="main_menu_item"> <a href="index.html"> Информация </a></li>
+          <li class="main_menu_item"><a href="blank.html">Фото и видео </a> </li>
+          <li class="main_menu_item"> <a href="blank.html"> Карта штата</a></li>
+          <li class="main_menu_item"><a href="catalog.html"> Гостинница </a> </li>
+        </ul>
+      </nav>
+    </header>
+    <main> 
+      <h1> Выбор опций жилья</h1>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset>
+          <legend>Инфраструктура</legend>
+          <input type="checkbox" name="" id="chk_pool"> <label for="chk_pool"> Бассейн </label> <br>
+          <input type="checkbox" name="" id="chk_parking"> <label for="chk_parking"> Паркинг </label> <br>
+          <input type="checkbox" name="" id="chk_wifi"> <label for="chk_wifi">Wi-fi</label>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья</legend>
+          <input type="checkbox" name="" id="chk_hotel"> <label for="chk_hotel"> Гостинница </label> <br>
+          <input type="checkbox" name="" id="chk_motel"> <label for="chk_motel"> Мотель </label> <br>
+          <input type="checkbox" name="" id="chk_app"> <label for="chk_app">Апартаменты</label>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость</legend>
+          <span> От 0</span> <span> до 3000</span>
+          <input type="range" name="" id="" max="3000">
+        </fieldset>
+        <input type="submit" value="Показать">
+      </form> 
+      <section>
+        <h2>Результаты поиска</h2>
+        <p>Найдено 3</p>
+        <h3>Сортировка:</h3>
+        <ul>
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По рейтингу</li>
+        </ul>
+      <span> 
+      <button> по возрастанию</button>
+      <button> по убыванию</button>
+      </span>
+      </section>
+      <section> 
+        <ul>
+          <li> 
+            <p> Amara Resort & SPA</p>
+            <span> Гостинница </span>
+            <span> От 4000 ₽</span> <br>
+            <button>Подробнее</button>
+            <button>Забронировать</button>
+            <span>4 stars</span>
+            <p>Рейтинг 8.5</p>
+          </li>
+          <li>
+            <p> Desert Quail Inn</p>
+            <span> Мотель </span>
+            <span> От 3000 ₽</span> <br>
+            <button>Подробнее</button>
+            <button>Забронировать</button>
+            <span>3 stars</span>
+            <p>Рейтинг 8.9</p>
+          </li>
+          <li>
+            <p> Villas at Poco Diablo</p>
+            <span> Апартаменты </span>
+            <span> От 2000 ₽</span> <br>
+            <button>Подробнее</button>
+            <button>Забронировать</button>
+            <span>2 stars</span>
+            <p>Рейтинг 9.2</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <p> #VISITSEDONA </p>
+        <a href="tel:+78005558628">+7 800 555-86-28</a>
+      </section>
+      <section>
+        <ul>
+          <li><a href="twitter.com">twitter</a></li>
+          <li><a href="facebook.com">facebook</a></li>
+          <li><a href="youtube.com">youtube</a></li>
+        </ul>
+      </section>
+      <p> Website by htmlacademy logo</p>
+    </footer>
+  </body>
+</html>

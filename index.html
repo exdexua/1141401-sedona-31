@@ -5,8 +5,101 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="header"> 
+      <nav>
+        <a class="main_logo"> 
+          <img src="img/logo.svg" alt="Логотип Седона" width="138px" height="70px">
+        </a>
+        <ul class="main_menu_list">
+          <li class="main_menu_item"> <a href="index.html"> Информация </a></li>
+          <li class="main_menu_item"><a href="blank.html">Фото и видео </a> </li>
+          <li class="main_menu_item"> <a href="blank.html"> Карта штата</a></li>
+          <li class="main_menu_item"><a href="catalog.html"> Гостинницы </a> </li>
+        </ul>
+      </nav>
+    </header>
+    <main> 
+      <h1> Сайт поиска жилья города Седонона </h1>
+      <section class="sedona_description">
+        <p> Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+      <h2> Преимущества Седоны </h2>
+      <ul class="features_list">
+        <li class="features_list_item">
+          <p> Настоящий городок </p>
+          <span> — №1 — </span>
+          <p> Седона - не аттракцион для туристов, там течёт своя жизнь </p>
+          <ul class="tourist_features_list">
+            <li class="touris_features_item">
+               <p>Жилье</p>
+               <span>Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
+              </li>
+            <li class="touris_features_item">
+              <p>Еда</p>
+              <span>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
+            </li>
+            <li class="touris_features_item">
+              <p>Сувениры</p>
+              <span>Не только китайского, но и местного
+                производства!</span>
+            </li>
+          </ul>
+        </li>
+        <li class="features_list_item">
+          <p>Там есть мост Дьявола</p>
+          <span>— №2 —</span>
+          <p>Да, по нему можна пройти! Если конечно вы осмелитесь</p>
+        </li>
+        <li class="features_list_item">
+          <p>небольшая площадь</p>
+          <span>— №3 —</span>
+          <p> все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="features_list_item">
+          <p> красивая дорога</p>
+          <span> — №4 —</span>
+          <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+        </li>
+        <li class="features_list_item">
+          <p>мало туристов</p>
+          <span>— №5 —</span>
+          <p>большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ul>
+      <section>
+        <p>Заинтересовались?</p>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button type="button">Поиск гостинницы в Седоне</button>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <p> #VISITSEDONA </p>
+        <a href="tel:+78005558628">+7 800 555-86-28</a>
+      </section>
+      <section>
+        <ul>
+          <li><a href="twitter.com">twitter</a></li>
+          <li><a href="facebook.com">facebook</a></li>
+          <li><a href="youtube.com">youtube</a></li>
+        </ul>
+      </section>
+      <p> Website by htmlacademy logo</p>
+    </footer>
+    <section class="popup"> 
+      <h2> Выберите дату заезда </h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+      <label for="travel_date">Дата заезда</label>
+      <input type="date" name="date" id="travel_date" placeholder="11 июля 2021">
+      <label for="travel_end_date">Дата выезда</label>
+      <input type="date" name="end_travel_date" id="travel_end_date" placeholder="21 июля 2021">
+      <label for="adult_age">Взрослые</label>
+      <input type="number" name="adult" id="adulta_age" value="2" >
+      <label for="kids">Дети</label>
+      <input type="number" name="kids" id="kids" value="0">
+      <input type="submit" value="Найти">
+      </form>
+    </section>
   </body>
 </html>
