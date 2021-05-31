@@ -6,7 +6,8 @@
     --basic-grey: #766357;
     --basic-white: #ffffff;
     --special-grey: #604E43;
-
+    --special-blue: #669EC0;
+    --special-white: #f3f3f3;
 }
 
 body {
@@ -32,8 +33,9 @@ body {
     color: var(--basic-black);
 
 }
-.main-menu-list a:not([href]){
-    opacity: 0.3;
+.main-menu-list a:not([href]),
+.main-menu-list a:active {
+    color: rgba(0, 0, 0, 0.3)
 }
 .main-menu-list a:hover {
     color: var(--basic-blue)
@@ -145,6 +147,13 @@ body {
     text-align:center;
     vertical-align: middle;
 }
+.button-search-details:active{
+    background-color: var(--special-blue);
+    color: rgba(255, 255, 255, 0.3)
+}
+.button-search-details:hover{
+    background-color: var(--special-blue);
+}
 .appointment-form input {
-    background-color: #f2f2f2;
+    background-color: var(--special-white);
 }
